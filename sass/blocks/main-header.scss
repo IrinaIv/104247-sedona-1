@@ -2,14 +2,14 @@
 
 .main-header {
   background-color: $white-color;
-}
 
-.main-header__elements {
-  display: flex;
-  justify-content: flex-end;
-  align-items: stretch;
-  min-height: 56px;
-  position: relative;
+  &__elements {
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    min-height: 56px;
+    position: relative;
+  }
 }
 
 @media (min-width: 768px) {

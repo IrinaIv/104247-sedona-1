@@ -58,11 +58,7 @@
   color: #000000;
 }
 
-.feedback__block input::-moz-placeholder {
-  color: #000000;
-}
-
-.feedback__block input::-webkit-input-placeholder {
+.feedback__block input::placeholder {
   color: #000000;
 }
 
@@ -70,11 +66,7 @@
   color: #000000;
 }
 
-.feedback__block textarea::-moz-placeholder {
-  color: #000000;
-}
-
-.feedback__block textarea::-webkit-input-placeholder {
+.feedback__block textarea::placeholder {
   color: #000000;
 }
 
@@ -165,7 +157,7 @@
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 58px;
     height: 60px;
@@ -203,7 +195,7 @@
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 58px;
     height: 60px;
@@ -233,7 +225,7 @@
 }
 
 .feedback__block input[type="radio"] + label::before {
-  content: "";
+  content: '';
   position: absolute;
   border: 28px solid $input-color;
   border-radius: 50%;
@@ -284,7 +276,7 @@
 }
 
 .feedback__block input[type="checkbox"] + label::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 46px;
   height: 46px;
@@ -361,7 +353,7 @@
 }
 
 .feedback__label--phone::before {
-  content: "Контактный\00A0";
+  content: 'Контактный\00A0';
   display: inline-block;
   vertical-align: baseline;
 }
@@ -393,7 +385,7 @@
     position: relative;
 
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       width: 648px;
       height: 1px;
@@ -482,7 +474,7 @@
     min-width: 266px;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       height: 292px;
       width: 1px;
@@ -742,7 +734,7 @@
   }
 
   .feedback__label--phone::before {
-    content: "";
+    content: '';
   }
 
   .feedback__block--position {
