@@ -1,0 +1,39 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.main-footer__hashtag {
+  margin: 0;
+  @include bold-text;
+  padding-top: 29px;
+  padding-bottom: 36px;
+}
+
+@media (min-width: 768px) {
+
+  .main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 28px;
+    padding-bottom: 36px;
+  }
+
+  .main-footer__hashtag {
+    padding: 0;
+    margin-left: 61px;
+    margin-right: 110px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .main-footer {
+    padding-top: 28px;
+  }
+
+  .main-footer__hashtag {
+    margin-left: 132px;
+    margin-right: 255px;
+  }
+}
+

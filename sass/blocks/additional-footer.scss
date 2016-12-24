@@ -1,0 +1,38 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.additional-footer__hashtag {
+  margin: 0;
+  @include bold-text;
+  padding-top: 23px;
+  padding-bottom: 38px;
+}
+
+@media (min-width: 768px) {
+
+  .additional-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 49px;
+    padding-bottom: 36px;
+  }
+
+  .additional-footer__hashtag {
+    padding: 0;
+    margin-left: 61px;
+    margin-right: 110px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .additional-footer {
+    padding-top: 35px;
+  }
+
+  .additional-footer__hashtag {
+    margin-left: 132px;
+    margin-right: 255px;
+  }
+}

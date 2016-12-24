@@ -1,0 +1,64 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.social {
+  @include list;
+  padding-bottom: 40px;
+}
+
+.social__links {
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.social__links:last-child {
+  margin-right: 0;
+}
+
+.social__link {
+  text-decoration: none;
+  display: block;
+  color: $white-color;
+  background-color: $blue-bg;
+  width: 47px;
+  height: 48px;
+  fill: $white-color;
+  vertical-align: middle;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.social__icon--tw {
+  margin-top: 17px;
+}
+
+.social__icon--fb {
+  margin-top: 14px;
+}
+
+.social__icon--yt {
+  margin-top: 17px;
+}
+
+@media (min-width: 768px) {
+
+  .social {
+    padding: 0;
+    margin-right: 119px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .social {
+    margin-right: 351px;
+  }
+}
