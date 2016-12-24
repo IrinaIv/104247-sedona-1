@@ -16,12 +16,12 @@
     justify-content: flex-start;
     padding-top: 49px;
     padding-bottom: 36px;
-  }
 
-  .additional-footer__hashtag {
-    padding: 0;
-    margin-left: 61px;
-    margin-right: 110px;
+    &__hashtag {
+      padding: 0;
+      margin-left: 61px;
+      margin-right: 110px;
+    }
   }
 }
 
@@ -29,10 +29,10 @@
 
   .additional-footer {
     padding-top: 35px;
-  }
 
-  .additional-footer__hashtag {
-    margin-left: 132px;
-    margin-right: 255px;
+    &__hashtag {
+      margin-left: 132px;
+      margin-right: 255px;
+    }
   }
 }
