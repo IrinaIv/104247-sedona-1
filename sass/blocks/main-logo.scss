@@ -7,11 +7,11 @@
   background: url('../img/bg-intro-triangle-mobile.svg') bottom no-repeat,
   $light-blue-bg url('../img/bg-back-mobile@1x.jpg') center no-repeat;
   background-size: cover, cover;
-}
 
-.main-logo__sedona-pic {
-  width: 281px;
-  height: 214px;
+  &__sedona-pic {
+    width: 281px;
+    height: 214px;
+  }
 }
 
 @media (min-width: 320px) and (min-resolution: 144dpi),

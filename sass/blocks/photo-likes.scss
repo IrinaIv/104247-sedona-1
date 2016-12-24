@@ -2,55 +2,47 @@
 @import "../mixins.scss";
 
 .photo-likes {
-  position: relative;
-}
 
-.photo-likes__like {
-  outline: none;
-  border: none;
-  background-color: transparent;
-  padding-bottom: 3px;
-}
+  &__like {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding-bottom: 3px;
+  }
 
-.photo-likes__like-pic {
-  fill: #b2b2b2;
-}
+  &__like-pic {
+    fill: #b2b2b2;
+  }
 
-.photo-likes__amount {
-  @include photo-titles;
+  &__amount {
+    @include photo-titles;
+  }
 }
 
 @media (min-width: 768px) {
 
   .photo-likes {
-    position: absolute;
-    left: 234px;
-    bottom: 23px;
-  }
+    padding-right: 29px;
 
-  .photo-likes--big {
-    left: 559px;
-  }
+    &__like {
+      padding-bottom: 8px;
+    }
 
-  .photo-likes__like-pic {
-    fill: #a9a9a9;
-  }
+    &--big {
+      padding-right: 20px;
+    }
 
-  .photo-likes__like-pic--dark {
-    fill: #a3a3a3;
+    &__like-pic {
+      fill: #a9a9a9;
+    }
+
+    &__like-pic--dark {
+      fill: #a3a3a3;
+    }
   }
 }
 
 @media (min-width: 1200px) {
-
-  .photo-likes {
-    left: 309px;
-    bottom: 23px;
-  }
-
-  .photo-likes--big {
-    left: 1110px;
-  }
 
   .photo-likes__like-pic {
     fill: $white-color;

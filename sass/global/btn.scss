@@ -22,73 +22,82 @@
   }
 }
 
-.btn--search {
-  min-width: 280px;
-  min-height: 58px;
-  margin-left: 20px;
-  margin-right: 20px;
-  line-height: 58px;
-}
+.btn {
 
-.btn--submit {
-  border: none;
-  min-width: 280px;
-  min-height: 58px;
-  margin-left: 20px;
-  margin-right: 20px;
-  text-transform: uppercase;
-  line-height: 58px;
-}
+  &--search {
+    min-width: 280px;
+    min-height: 58px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 58px;
+  }
 
-.btn--exception {
-  min-width: 180px;
-  min-height: 58px;
-  line-height: 58px;
-  margin-left: 70px;
-  margin-right: 70px;
-}
+  &--submit {
+    border: none;
+    min-width: 280px;
+    min-height: 58px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    line-height: 58px;
+  }
 
-.btn--closing {
-  min-width: 280px;
-  min-height: 58px;
-  line-height: 58px;
+  &--exception {
+    min-width: 180px;
+    min-height: 58px;
+    line-height: 58px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  &--closing {
+    min-width: 280px;
+    min-height: 58px;
+    line-height: 58px;
+  }
 }
 
 @media (min-width: 768px) {
 
-  .btn--search {
-    min-width: 458px;
-    margin-left: 155px;
-    margin-right: 155px;
-  }
+  .btn {
 
-  .btn--submit {
-    min-width: 324px;
-    margin-left: 60px;
-    margin-right: 60px;
-  }
+    &--search {
+      min-width: 458px;
+      margin-left: 155px;
+      margin-right: 155px;
+    }
 
-  .btn--exception {
-    min-width: 272px;
-    margin-left: 64px;
-    margin-right: 64px;
-  }
+    &--submit {
+      min-width: 324px;
+      margin-left: 60px;
+      margin-right: 60px;
+    }
 
-  .btn--closing {
-    min-width: 458px;
+    &--exception {
+      min-width: 272px;
+      margin-left: 64px;
+      margin-right: 64px;
+    }
+
+    &--closing {
+      min-width: 458px;
+    }
   }
 }
 
 @media (min-width: 1200px) {
 
-  .btn--search {
-    margin-left: 371px;
-    margin-right: 371px;
-  }
+  .btn {
 
-  .btn--submit {
-    min-width: 480px;
-    margin-left: 120px;
-    margin-right: 120px;
+    &--search {
+      margin-left: 371px;
+      margin-right: 371px;
+    }
+
+    &--submit {
+      min-width: 480px;
+      margin-left: 120px;
+      margin-right: 120px;
+    }
   }
 }
