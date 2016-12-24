@@ -1,0 +1,57 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.failure-popup {
+  padding-top: 33px;
+  padding-bottom: 35px;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+  width: 320px;
+  position: fixed;
+  top: 50%;
+  margin-top: -140px;
+  left: 0;
+  z-index: 5;
+  background-color: $white-color;
+  display: none;
+}
+
+.failure-popup__title {
+  @include bold-titles;
+  margin: 0;
+}
+
+.failure-popup__text {
+  color: $grey-color;
+  line-height: 24px;
+  margin: 0;
+  padding-left: 56px;
+  padding-right: 56px;
+  padding-bottom: 16px;
+  padding-top: 13px;
+}
+
+@media (min-width: 768px) {
+
+  .failure-popup {
+    width: 400px;
+    padding-top: 44px;
+    padding-bottom: 49px;
+    left: 50%;
+    margin-top: -174px;
+    margin-left: -200px;
+  }
+
+  .failure-popup__title {
+    font-size: 30px;
+    line-height: 40px;
+    padding-left: 93px;
+    padding-right: 94px;
+  }
+
+  .failure-popup__text {
+    padding-top: 7px;
+    padding-bottom: 27px;
+    padding-left: 61px;
+    padding-right: 61px;
+  }
+}

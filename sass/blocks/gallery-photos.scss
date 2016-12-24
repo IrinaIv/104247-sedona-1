@@ -1,0 +1,137 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.gallery-photos {
+  padding-top: 22px;
+  border-top: 1px solid $border-grey;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+
+  &:last-child {
+    border-bottom: 1px solid $border-grey;
+    padding-bottom: 9px;
+  }
+}
+
+.gallery-photos__photo {
+  min-width: 280px;
+  min-height: 280px;
+}
+
+.gallery-photos__photo-img {
+  vertical-align: bottom;
+}
+
+.gallery-photos__info {
+  text-align: left;
+  padding-top: 16px;
+}
+
+.gallery-photos__title {
+  margin: 0;
+  @include photo-titles;
+}
+
+.gallery-photos__author {
+  margin: 0;
+  text-transform: none;
+  line-height: 24px;
+  color: $grey-color;
+  padding-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+
+  .gallery-photos {
+    border: none;
+    padding: 0;
+    min-width: 324px;
+    font-size: 0;
+
+    &:first-child {
+      padding-top: 38px;
+      min-width: 648px;
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .gallery-photos__photo {
+    min-width: 324px;
+    min-height: 267px;
+  }
+
+  .gallery-photos__photo--wide {
+    min-width: 648px;
+    min-height: 400px;
+  }
+
+  .gallery-photos__info {
+    background-color: $input-color;
+    position: relative;
+    padding-left: 20px;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .gallery-photos__info--dark {
+    background-color: #eaeaea;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .gallery-photos {
+    min-width: 400px;
+
+    &:first-child {
+      padding-top: 0;
+      min-width: 1200px;
+    }
+  }
+
+  .gallery-photos__info {
+    color: $white-color;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .gallery-photos__author {
+    color: $white-color;
+  }
+
+  .gallery-photos--large {
+    position: relative;
+  }
+
+  .gallery-photos__info--large {
+    position: absolute;
+    min-width: 1180px;
+    left: 0;
+    top: 320px;
+  }
+
+  .gallery-photos__photo {
+    min-width: 400px;
+    min-height: 267px;
+  }
+
+  .gallery-photos__photo--wide {
+    min-width: 1200px;
+    min-height: 400px;
+  }
+
+  .gallery-photos--small {
+    position: relative;
+  }
+
+  .gallery-photos__info--small {
+    position: absolute;
+    min-width: 380px;
+    left: 0;
+    top: 187px;
+  }
+}

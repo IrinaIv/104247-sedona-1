@@ -1,0 +1,94 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.btn {
+  display: block;
+  text-decoration: none;
+  @include bold-text;
+  color: $white-color;
+  background-color: $blue-bg;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $border-grey;
+  }
+}
+
+.btn--search {
+  min-width: 280px;
+  min-height: 58px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 58px;
+}
+
+.btn--submit {
+  border: none;
+  min-width: 280px;
+  min-height: 58px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  line-height: 58px;
+}
+
+.btn--exception {
+  min-width: 180px;
+  min-height: 58px;
+  line-height: 58px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.btn--closing {
+  min-width: 280px;
+  min-height: 58px;
+  line-height: 58px;
+}
+
+@media (min-width: 768px) {
+
+  .btn--search {
+    min-width: 458px;
+    margin-left: 155px;
+    margin-right: 155px;
+  }
+
+  .btn--submit {
+    min-width: 324px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .btn--exception {
+    min-width: 272px;
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
+  .btn--closing {
+    min-width: 458px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .btn--search {
+    margin-left: 371px;
+    margin-right: 371px;
+  }
+
+  .btn--submit {
+    min-width: 480px;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+}

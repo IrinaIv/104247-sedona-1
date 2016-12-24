@@ -1,0 +1,31 @@
+@import "global/normalize.scss";
+@import "global/fonts.scss";
+@import "global/base.scss";
+@import "global/btn.scss";
+@import "global/copyright.scss";
+
+@import "blocks/main-header.scss";
+@import "blocks/navigation.scss";
+@import "blocks/logo.scss";
+@import "blocks/social.scss";
+
+@import "blocks/main-logo.scss";
+@import "blocks/promo-titles.scss";
+@import "blocks/features-items.scss";
+@import "blocks/recommendation.scss";
+@import "blocks/map.scss";
+@import "blocks/main-footer.scss";
+
+@import "blocks/additional-logo.scss";
+@import "blocks/feedback-promo.scss";
+@import "blocks/feedback.scss";
+@import "blocks/failure-popup.scss";
+@import "blocks/success-popup.scss";
+
+@import "blocks/gallery-promo.scss";
+@import "blocks/gallery.scss";
+@import "blocks/gallery-photos.scss";
+@import "blocks/photo-likes.scss";
+@import "blocks/advice-promo.scss";
+@import "blocks/video.scss";
+@import "blocks/additional-footer.scss";

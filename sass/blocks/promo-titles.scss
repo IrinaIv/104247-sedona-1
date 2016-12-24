@@ -1,0 +1,49 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.promo-titles {
+  padding-top: 39px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.promo-titles__title {
+  margin: 0;
+  @include bold-titles;
+  padding-left: 12px;
+  padding-right: 13px;
+  padding-bottom: 27px;
+}
+
+.promo-titles__text {
+  margin: 0;
+  color: $grey-color;
+}
+
+@media (min-width: 768px) {
+
+  .promo-titles {
+    padding-top: 50px;
+    padding-left: 139px;
+    padding-right: 140px;
+    padding-bottom: 50px;
+  }
+
+  .promo-titles__title {
+    @include bold-text;
+    padding-bottom: 28px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .promo-titles {
+    padding-left: 357px;
+    padding-right: 357px;
+  }
+
+  .promo-titles__title {
+    padding-bottom: 28px;
+  }
+}

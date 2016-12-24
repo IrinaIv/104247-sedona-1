@@ -1,0 +1,33 @@
+@mixin list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin bold-titles {
+  font-family: 'ptsans-bold', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@mixin photo-titles {
+  font-family: 'ptsans-bold', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@mixin bold-text {
+  font-family: 'ptsans-bold', 'Arial', sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+@mixin features-text {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@mixin variants-text {
+  @include bold-titles;
+  text-transform: none;
+}
