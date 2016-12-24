@@ -38,13 +38,13 @@
       </section>
       <form class="feedback" action="#" method="post">
         <div class="feedback__row feedback__row--order2">
-          <div class="feedback__title">Представьтесь, пожалуйста:</div>
+          <div class="feedback__title">Представьтесь:</div>
           <div class="feedback__block feedback__block--bottom feedback__block--long">
-            <label class="feedback__label" for="name">Имя:</label>
+            <label class="feedback__label" for="name">Имя*:</label>
             <input class="feedback__field feedback__field--long" name="name" id="name" type="text" placeholder="Петр" required>
           </div>
           <div class="feedback__block feedback__block--bottom feedback__block--short">
-            <label class="feedback__label" for="surname">Фамилия:</label>
+            <label class="feedback__label" for="surname">Фамилия*:</label>
             <input class="feedback__field feedback__field--short" name="surname" id="surname" type="text" placeholder="Иванов" required>
           </div>
           <div class="feedback__block feedback__block--l-margin feedback__block--short">
@@ -56,12 +56,12 @@
           <div class="feedback__title feedback__title--contacts feedback__title--line"><span class="feedback__line">Контактная информация:</span></div>
           <div class="feedback__contacts">
             <div class="feedback__block feedback__block--position">
-              <label class="feedback__label feedback__label--phone" for="phone-number">Телефон:</label>
+              <label class="feedback__label feedback__label--phone" for="phone-number">Телефон*:</label>
               <input class="feedback__field" name="phone-number" id="phone-number" type="tel" pattern="[0-9]{11}" placeholder="Введите телефон" required>
               <p class="feedback__error">Ошибка, перепроверьте номер</p>
             </div>
             <div class="feedback__block feedback__block--margin">
-              <label class="feedback__label feedback__label--email" for="email">Электронная почта:</label>
+              <label class="feedback__label feedback__label--email" for="email">Электронная почта*:</label>
               <input class="feedback__field" name="email" id="email" type="email" placeholder="Введите e-mail" required>
             </div>
           </div>
